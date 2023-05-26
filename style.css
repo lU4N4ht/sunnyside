@@ -53,7 +53,7 @@ header .icon-arrow-down{
     width: 100%;
 }
 .description{
-    background-color: var(--body-bg);
+    /* background-color: var(--body-bg); */
     display: grid;
     padding-block: 64px;
     place-items: center;
@@ -67,6 +67,7 @@ header .icon-arrow-down{
     width: 300px;
 }
 .description__text{
+    padding: 0px 16px;
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--gray);
@@ -86,10 +87,89 @@ header .icon-arrow-down{
     width: 110%;
     border-radius: 4px;
     z-index: -1%;
-    opacity: 50%;
+    opacity: 30%;
     left: -5%;
     bottom: 1%;
 }
 .line-yellow{
     background-color: var(--yellow);
+}
+.line-red{
+    background-color: var(--red);
+}
+.container{
+    height: 600px;
+    background-size: cover;
+}
+.container.graphic{
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+}
+.container.graphic div{
+    color: var(--graphic-text);
+}
+.container .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 22px;
+    height: 100%;
+}
+.container .description__tittle{
+    font-size: 1.5rem;
+}
+.container .description__text{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.container.photography{
+    background-image: url(./images/mobile/image-photography.jpg);
+}
+.container.photography div{
+    color: var(--photography-text);
+}
+.testimonials{
+    text-align: center;
+}
+.testimonials-tittle{
+    font-family: var(--title-font);
+    font-size: 1.1rem;
+    letter-spacing: .2rem;
+    color: var(--gray);
+    text-transform: uppercase;
+    padding-top: 32px;
+}
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: 400px;
+}
+.client__avatar{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-size: cover;    
+}
+.client__avatar.client1{
+    background-image: url(./images/image-emily.jpg);
+}
+.client__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    opacity: .6;
+    padding: 0px 16px;
+}
+.client__name{
+    font-family: var(--title-font);
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+.client__job{
+    color: var(--gray);
+    font-weight: 600;
+    padding-top: 12px;
+    font-size: 1rem;
 }
