@@ -173,3 +173,41 @@ header .icon-arrow-down{
     padding-top: 12px;
     font-size: 1rem;
 }
+.client__avatar.client2{
+    background-image: url(./images/image-thomas.jpg);
+}
+.client__avatar.client3{
+    background-image: url(./images/image-jennie.jpg);
+}
+.images{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "f1 f2"
+    "f3 f4";
+}
+.foto{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.foto:nth-child(1){
+    grid-area: f1;
+    background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+}
+.foto:nth-child(2){
+    grid-area: f2;
+    background-image: url(./images/mobile/image-gallery-orange.jpg);
+}
+.foto:nth-child(3){
+    grid-area: f3;
+    background-image: url(./images/mobile/image-gallery-cone.jpg);
+}
+.foto:nth-child(4){
+    grid-area: f4;
+    background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+}
+
